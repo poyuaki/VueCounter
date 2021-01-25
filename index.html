@@ -1,0 +1,40 @@
+<!--
+    使用言語、フレームワーク
+    html、css、js、Vue.js
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SimpleCounter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1>SimpleCounter</h1>
+                <h3>更にシンプルに、簡単に</h3>
+            </div>
+        </header>
+        <main>
+            <div class="main" id="mainCounter">
+                <div class="viewNumber_P">
+                    <p id="viewNumber" class="viewNumber">{{ count }}</p>
+                </div>
+                <div class="controlButtonList mb-3">
+                    <button id="addCounter" class="btn btn-primary controlButton addButton" @click="increment">+</button>
+                    <button id="decCounter" class="btn btn-danger controlButton decButton" @click="decrement">-</button>
+                </div>
+                <div class="controlButtonList">
+                    <button id="resetCounter" class="btn btn-success resetButton" @click="resetCount">Reset</button>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+        <script src="script/vue.js"></script>
+    </body>
+</html>
